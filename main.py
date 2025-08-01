@@ -11,11 +11,12 @@ def get_coordinates(city, key):
         else:
             return 'Город не найден'
     except Exception as e:
-        
+        return f'Возникла ошибка : {e}'
+
 
 
 key = '3ebb6a43f72d4de090e915d62e03e30e'
-city = 'Moscow'
+city = 'London'
 coordinates = get_coordinates(city, key)
 print(f'Координаты города {city}: {coordinates}')
 
